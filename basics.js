@@ -144,4 +144,47 @@ while (counter <=10) {
   counter++;
 }
 
+// Funciones
+
+function sayHello() {
+  console.log("Hola!");
+}
+
+sayHello();
+
+function toUpper (text) {
+  console.log(text.toUpperCase());
+}
+
+toUpper("esto es un string");
+
+function sum(n1, n2) {
+  console.log(n1 + n2);
+}
+
+sum(10, 20);
+sum(7, 20);
+
+function multiply(n1, n2) {
+  return n1 * n2;
+}
+
+const multiplyResult = multiply(20, 5);
+console.log(multiplyResult);
+
+//arrow functions (funciones flecha)
+
+const subtract = (n1, n2) => {
+  return n1 - n2;
+}
+
+const subtractResult = subtract (30, 15);
+console.log(subtractResult);
+
+const divide = (n1, n2) => n1 / n2;
+
+const divideResult = divide (100, 50);
+console.log(divideResult);
+
+
 
