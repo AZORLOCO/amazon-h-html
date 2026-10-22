@@ -69,7 +69,7 @@ if (userCountry === "España") {
 }
 
 if (!true) {
-    console.log("La condicion es verdadera");
+  console.log("La condicion es verdadera");
 }
 
 /*
@@ -85,11 +85,63 @@ true || false
 let isTruthy = true;
 
 if (isTruthy) {
-    console.log("La condicion es truthy");
+  console.log("La condicion es truthy");
 } else {
-    console.log("La condicion es falsy");
+  console.log("La condicion es falsy");
 }
 
-console.log(userAge >= 18);
-
 console.log("El codigo sigue ejecutandose");
+
+//Objetos
+
+const product1 = {
+  name: "Laptop",
+  price: 1000,
+  inStock: true,
+};
+
+console.log(product1);
+console.log(product1.name);
+
+product1.delivery = "Free";
+console.log(product1);
+
+//Arrays
+
+const myArray = [1, 2, 3, 4, 5];
+console.log(myArray);
+console.log(myArray[0]);
+console.log(myArray.length);
+
+let lastIndex = myArray.length - 1;
+console.log(myArray[lastIndex]);
+
+const countryArray = ["España", "Venezuela", "Mexico"];
+console.log(countryArray);
+console.log(countryArray[1]);
+
+const productsArray = [product1];
+console.log(productsArray);
+
+// Bucles 
+
+for (let i = 1; i <= 10; i++){
+  console.log(i);
+}
+
+for (let i = 0; i <myArray.length; i++){
+  console.log(myArray[i]);
+}
+
+for (let i =0; i <countryArray.length; i++){
+  console.log(countryArray[i]);
+}
+
+let counter = 1;
+
+while (counter <=10) {
+  console.log(counter);
+  counter++;
+}
+
+
