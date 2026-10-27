@@ -84,8 +84,31 @@ const sumResult = numArrays.reduce((accumulator, currentValue) => {
 }, 0);
 console.log(sumResult);
 
+// toSorted 
 
- 
+const numbers = [22, 23, 99, 68, 1, 0, 9, 112, 223, 64, 18];
+
+//const sortedNumbers = numbers.toSorted();
+const sortedNumbers = numbers.toSorted((a, b) => a - b);
+console.log(sortedNumbers);
+
+const sortedProducts = products.toSorted ((a, b) => a.price - b.price);
+console.log(sortedProducts);
+
+// toReversed
+
+const revNumArr = numArrays.toReversed();
+console.log(revNumArr);
+
+const revCountries = countries.toReversed();
+console.log(revCountries);
+
+const revProducts = products.toReversed();
+console.log(revProducts);
+
+
+
+
 
 
 
